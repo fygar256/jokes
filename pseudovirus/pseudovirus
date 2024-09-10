@@ -1,23 +1,23 @@
 #!/usr/bin/bash
 #
 # joke program 'pseudovirus'
-# このスクリプトに実行権を与え、DEのアプリケーションのランチャに
-# 仕込んでおきましょう。firefoxのアイコンのアプリケーションランチャを、このスクリプトを起動するように
-# 指定すると、ジョークメッセージが表示された後、firefoxを起動します。
-# 悪質なジョークですが、実害はありません。スクリプトを見せれば納得してもらえるはずです。
-# ・zenityのインストールが必要です。
+# Give this script execution rights to the DE application launcher.
+# Specify the application launcher of the firefox icon to launch this script.
+# to launch this script, it will launch firefox after displaying a joke message.
+# It's a malicious joke, but it does no real harm. If you show the script, you will be convinced.
+# - You need to install zenity.
 # pacman -S zenity
-# ・実行権を与える
+# -Give them execution rights.
 # chmod +x pseudovirus
+# Translated with DeepL.com (free version)
  
 
 # JOKE MESSAGE
     sleep 1
-    zenity --info --text="ウィルスが検出されました。\nシステムが致命的なダメージを受けています。\nOSを再インストールしてください。"
-    zenity --info --text="嘘です。"
+    zenity --info --text="Virus detected.\nThe system had fatal damage.\nReinstall OS"
+    zenity --info --text="It is lie."
 
 #   
 # LAUNCH APPLIUCATION
-# ここで、アプリケーションをラウンチします。
 #
 /usr/lib/firefox/firefox
