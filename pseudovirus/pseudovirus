@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+#
+# joke program 'pseudovirus'
+# このスクリプトに実行権を与え、DEのアプリケーションのランチャに
+# 仕込んでおきましょう。firefoxのアイコンのアプリケーションランチャを、このスクリプトを起動するように
+# 指定すると、ジョークメッセージが表示された後、firefoxを起動します。
+# 悪質なジョークですが、実害はありません。スクリプトを見せれば納得してもらえるはずです。
+# ・zenityのインストールが必要です。
+# pacman -S zenity
+# ・実行権を与える
+# chmod +x pseudovirus
+ 
+
+# JOKE MESSAGE
+    sleep 1
+    zenity --info --text="ウィルスが検出されました。\nシステムが致命的なダメージを受けています。\nOSを再インストールしてください。"
+    zenity --info --text="嘘です。"
+
+#   
+# LAUNCH APPLIUCATION
+# ここで、アプリケーションをラウンチします。
+#
+/usr/lib/firefox/firefox
