@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+    mkdir dir
+    mv digger dir
+    cd dir
+    ./digger
