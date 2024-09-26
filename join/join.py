@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import time
 def disp_join(x):
-    join='ﾐ(Φ)ﾐ'
+    join='ﾐ(φ)ﾐ'
     s=chr(13)+" "*x+join+" "
     print(s,end='')
     time.sleep(0.1)
@@ -17,7 +17,7 @@ def main():
         disp_join(x)
     for x in range(0,37):
         disp_join(x)
-    print(" < ｸﾊﾟｧ")
+    print(chr(13)+"                                   ﾐ((Φ))ﾐ  < Spread!")
 
 
 if __name__=='__main__':
